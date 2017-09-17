@@ -1,7 +1,7 @@
 @LeadStatus
 Feature: Verification of opportunity to change status for newly added lead
 
-  Scenario: Login to base
+  Scenario: Login to base and verify ability to change status name
     When I open login page
     And I log in to account "zamuel7@uapproves.com" with password "13test13"
     And I open Leads tab

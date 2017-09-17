@@ -40,7 +40,7 @@ public class LeadPage {
 
     public void verifyNewStatusOfTheLead(String status, String surname) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-       WebElement listOfLeads = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/div/div[2]/div[2]/section[1]/div/div/div/ul/li")));
+        WebElement listOfLeads = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/div/div[2]/div[2]/section[1]/div/div/div/ul/li")));
         List<WebElement> el = (ArrayList<WebElement>) driver.findElements(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/div/div/div/div[2]/div/div[2]/div[2]/section[1]/div/div/div/ul/li"));
 
         for (int i = 0; i < el.size(); i++) {

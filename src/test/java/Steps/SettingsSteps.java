@@ -15,10 +15,9 @@ public class SettingsSteps {
     }
 
 
-
     @And("^I navigate to settings$")
     public void i_navigate_to_settings() {
-      SettingsPage settingsPage = new SettingsPage(driver);
+        SettingsPage settingsPage = new SettingsPage(driver);
         settingsPage.openSettingsScreen();
     }
 
